@@ -1,6 +1,7 @@
 @import 'vars';
 @import 'fonts';
 @import 'reset';
+@import 'libs';
 @import 'global';
 
 
@@ -25,10 +26,10 @@
 
   &__list-link {
     color: $title;
-    padding-bottom: 1px;
+    padding-bottom: 0 2px 1px;
     text-decoration: none;
     transition: all .3s;
-    @extend %roboto-400;
+    @extend %roboto-700;
 
     &:hover {
       color: $accent;
