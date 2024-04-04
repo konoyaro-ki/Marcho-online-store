@@ -9,6 +9,7 @@
   "author": "Kirill Chepel",
   "license": "ISC",
   "devDependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
     "browser-sync": "^2.29.3",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
@@ -24,6 +25,8 @@
     "gulp-ttf2woff2": "^4.0.1",
     "gulp-uglify-es": "^3.0.0",
     "gulp-webp": "^4.0.1",
-    "sass": "^1.69.5"
+    "rateyo": "^2.3.2",
+    "sass": "^1.69.5",
+    "slick-carousel": "^1.8.1"
   }
 }
