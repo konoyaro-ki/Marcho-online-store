@@ -1,1 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" height="16" width="10" viewBox="0 0 320 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg"  width="6pt" height="9pt" viewBox="0 0 6 9" version="1.1">
+<g >
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(0%,0%,0%);fill-opacity:1;" d="M 5.234375 5.0625 L 5.5 3.433594 L 3.832031 3.433594 L 3.832031 2.375 C 3.832031 1.929688 4.066406 1.496094 4.8125 1.496094 L 5.570312 1.496094 L 5.570312 0.109375 C 5.570312 0.109375 4.882812 0 4.226562 0 C 2.851562 0 1.957031 0.78125 1.957031 2.191406 L 1.957031 3.433594 L 0.429688 3.433594 L 0.429688 5.0625 L 1.957031 5.0625 L 1.957031 9 L 3.832031 9 L 3.832031 5.0625 Z M 5.234375 5.0625 "/>
+</g>
+</svg>

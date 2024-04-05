@@ -1,4 +1,11 @@
-<svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-<ellipse cx="9.76657" cy="10.6301" rx="8.98856" ry="8.88424" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M16.0183 17.2706L19.5423 20.7447" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="20.03" height="20" viewBox="0 0 20.03 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #29282d;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="search" class="cls-1" d="M1439.89,63.7l-5.81-5.81a7.944,7.944,0,1,0-1.18,1.178l5.81,5.81a0.417,0.417,0,0,0,.59,0l0.59-.589A0.421,0.421,0,0,0,1439.89,63.7Zm-11.96-4.533a6.25,6.25,0,1,1,6.25-6.25A6.254,6.254,0,0,1,1427.93,59.163Z" transform="translate(-1420 -45)"/>
 </svg>

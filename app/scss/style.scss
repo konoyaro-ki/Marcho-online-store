@@ -183,11 +183,11 @@ footer {
 }
 
 .top-slider {
-  background-image: url(../images/decor/top-slider-bg.png);
+  background-image: url("../images/decor/top-slider.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: $bg;
-  padding-top: 65px 0 45px;
+  padding: 65px 0 45px;
 
   &__container {
     max-width: 1560px;
@@ -269,12 +269,12 @@ footer {
 
 .categories-info {
   padding: 120px 0;
-  background-image: url(../images/decor/categories-left-bg.png);
+  background-image: url("../images/decor/categories-left-bg.png");
   background-repeat: no-repeat;
   background-position: center left;
 
   &__inner {
-    background-image: url(../images/decor/categories-right-bg.png);
+    background-image: url("../images/decor/categories-right-bg.png");
     background-repeat: no-repeat;
     background-position: center right;
   }
@@ -284,6 +284,7 @@ footer {
   display: flex;
   justify-content: space-between;
   margin-bottom: 110px;
+
   position: relative;
 
   &::before,
@@ -293,7 +294,8 @@ footer {
   }
 
   &::before {
-    background-image: url(../images/decor/info-before-bg.svg);
+    background-image: url("../images/decor/info-before.svg");
+    content: "";
     top: -40px;
     left: -45px;
     width: 120px;
@@ -301,7 +303,8 @@ footer {
   }
 
   &::after {
-    background-image: url(../images/decor/info-after-bg.svg);
+    background-image: url("../images/decor/info-after.svg");
+    content: "";
     bottom: -23px;
     right: -23px;
     width: 65px;
@@ -395,7 +398,7 @@ footer {
 }
 .video-fashion {
   background-color: $bg;
-  background-image: url(../images/decor/pattern.png);
+  background-image: url("../images/decor/Pattern.svg");
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
@@ -624,7 +627,7 @@ footer {
       z-index: -1;
       width: 126px;
       height: 53px;
-      background-image: url("../images/decor/blog3.svg");
+      background-image: url("../images/decor/blog-decor.svg");
     }
   }
   &__item {
@@ -671,10 +674,10 @@ footer {
     }
   }
   &__item-author::before {
-    background-image: url("../images/icons/user-gray.svg");
+    background-image: url("../images/icons/user-grey.svg");
   }
   &__item-date::before {
-    background-image: url("../images/icons/clock.svg");
+    background-image: url("../images/icons/time.svg");
   }
   &__item-title {
     color: $title;
