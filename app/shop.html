@@ -8,7 +8,7 @@
   </head>
 
   <body>
-    <header class="header header--404-page">
+    <header class="header">
       <div class="container">
         <div class="header__inner">
           <a class="logo" href="index.html">
@@ -17,14 +17,12 @@
           <nav class="menu">
             <ul class="menu__list">
               <li class="menu__list-item">
-                <a
-                  class="menu__list-link menu__list-link--active"
-                  href="index.html"
-                  >HOME</a
-                >
+                <a class="menu__list-link" href="#">HOME</a>
               </li>
               <li class="menu__list-item">
-                <a class="menu__list-link" href="#">SHOP</a>
+                <a class="menu__list-link menu__list-link--active" href="#"
+                  >SHOP</a
+                >
               </li>
               <li class="menu__list-item">
                 <a class="menu__list-link" href="#">PAGE</a>
@@ -38,7 +36,7 @@
             </ul>
           </nav>
           <div class="user-nav">
-            <a class="user-nav__link" href="login.html">
+            <a class="user-nav__link" href="#">
               <img
                 class="user-nav__link-img"
                 src="images/icons/user.svg"
@@ -73,19 +71,71 @@
       </div>
     </header>
     <main class="main">
-      <section class="page-404">
-        <div class="container">
-          <div class="page-404__inner">
-            <div class="page-404__content">
-              <h2 class="page-404__title">OPPS! Page Not Found!!</h2>
-              <p class="page-404__text">
-                We, re sorry but we can`t seem to find the pages you request.
-                This might be because you have typed the web address not find
-                incorrectly.
-              </p>
-              <a class="page-404__link" href="index.html">BACK TO HOME</a>
+      <section class="top">
+        <div
+          class="top__container"
+          style="background-image: url('images/top-bg.jpg')"
+        >
+          <div class="container">
+            <h2 class="top__title title">SHOP PAGE</h2>
+            <div class="breadcrumbs">
+              <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                  <a class="breadcrumbs__link" href="index.html">Home</a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <a class="breadcrumbs__link" href="#">Shop</a>
+                </li>
+              </ul>
             </div>
-            <img class="page-404__img" src="images/404.png" alt="404 images" />
+          </div>
+        </div>
+      </section>
+      <section class="shop">
+        <div class="container">
+          <div class="shop__inner">
+            <div class="shop__filters filter">
+              <div class="filter-search filter__item">
+                <h3 class="filter__title">SEARCH</h3>
+                <form class="filter-search__form" action="#">
+                  <input
+                    class="filter-search__input"
+                    type="text"
+                    placeholder="Search your keyword..."
+                  />
+                  <button class="filter-search__btn" type="submit">
+                    <img
+                      src="images/icons/search-white.svg"
+                      alt="search icon"
+                    />
+                  </button>
+                </form>
+              </div>
+              <div class="filter-price filter__item">
+                <h3 class="filter__title">PRICE FILTER</h3>
+                <form class="filter-price__form" action="#">
+                  <input
+                    class="filter-price__input"
+                    type="text"
+                    data-min="0"
+                    data-max="999"
+                    data-from="200"
+                    data-to="800"
+                  />
+                  <label class="filter-price__label">
+                    <span
+                      >Price: $<span class="filter-price__from"></span> - $<span
+                        class="filter-price__to"
+                      ></span
+                    ></span>
+                    <button class="filter-price__btn" type="submit">
+                      FILTER
+                    </button>
+                  </label>
+                </form>
+              </div>
+            </div>
+            <div class="shop__content"></div>
           </div>
         </div>
       </section>
