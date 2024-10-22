@@ -1,18 +1,35 @@
 $(function () {
-  $(".filter-price__input").ionRangeSlider({
-    type: "double",
-    prefix: "$",
+
+
+  $('.shop-content__filter-btn').on('click', function () {
+    $('.shop-content__filter-btn').removeClass('shop-content__filter-btn--active');
+    $(this).addClass('shop-content__filter-btn--active');
+  });
+
+  $('.button-list').on('click', function () {
+    $('.product-item').addClass('product-item--list')
+  });
+
+  $('.button-grid').on('click', function () {
+    $('.product-item').removeClass('product-item--list')
+  });
+
+  $('.select-style').styler();
+
+  $('.filter-price__input').ionRangeSlider({
+    type: 'double',
+    prefix: '$',
     onStart: function (data) {
-      $(".filter-price__from").text(data.from);
-      $(".filter-price__to").text(data.to);
+      $('.filter-price__from').text(data.from);
+      $('.filter-price__to').text(data.to);
     },
     onChange: function (data) {
-      $(".filter-price__from").text(data.from);
-      $(".filter-price__to").text(data.to);
+      $('.filter-price__from').text(data.from);
+      $('.filter-price__to').text(data.to);
     },
   });
 
-  $(".top-slider__inner").slick({
+  $('.top-slider__inner').slick({
     dots: true,
     arrows: false,
     fade: true,
@@ -21,10 +38,10 @@ $(function () {
   });
 
   $(function () {
-    $(".star").rateYo({
-      starWidth: "17px",
-      normalFill: "#ccccce",
-      ratedFill: "#ffc35b",
+    $('.star').rateYo({
+      starWidth: '17px',
+      normalFill: '#ccccce',
+      ratedFill: '#ffc35b',
       readOnly: true,
     });
   });
@@ -44,19 +61,19 @@ $(function () {
   }
 
   function initializeClock(id, endtime) {
-    var clock = document.querySelector(".promo__clock");
-    var daysSpan = clock.querySelector(".promo__days");
-    var hoursSpan = clock.querySelector(".promo__hours");
-    var minutesSpan = clock.querySelector(".promo__minutes");
-    var secondsSpan = clock.querySelector(".promo__seconds");
+    var clock = document.querySelector('.promo__clock');
+    var daysSpan = clock.querySelector('.promo__days');
+    var hoursSpan = clock.querySelector('.promo__hours');
+    var minutesSpan = clock.querySelector('.promo__minutes');
+    var secondsSpan = clock.querySelector('.promo__seconds');
 
     function updateClock() {
       var t = getTimeRemaining(endtime);
 
       daysSpan.innerHTML = t.days;
-      hoursSpan.innerHTML = ("0" + t.hours).slice(-2);
-      minutesSpan.innerHTML = ("0" + t.minutes).slice(-2);
-      secondsSpan.innerHTML = ("0" + t.seconds).slice(-2);
+      hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+      minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+      secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
 
       if (t.total <= 0) {
         clearInterval(timeinterval);
@@ -67,6 +84,6 @@ $(function () {
     var timeinterval = setInterval(updateClock, 1000);
   }
 
-  var deadline = $(".promo__clock").attr("data-time");
-  initializeClock("promo__clock", deadline);
+  var deadline = $('.promo__clock').attr('data-time');
+  initializeClock('promo__clock', deadline);
 });
